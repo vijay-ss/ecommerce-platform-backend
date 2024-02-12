@@ -6,7 +6,6 @@ import (
 	"log"
 	"time"
 
-	"github.com/stripe/stripe-go/v76/client"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
