@@ -93,7 +93,7 @@ func UpdateAllTokens(signedToken string, signedRefreshToken string, userId strin
 
 	upsert := true
 
-	filter := bson.M("user_id": userId)
+	filter := bson.M{"user_id": userId}
 	opt := options.UpdateOptions{
 		Upsert: &upsert,
 	}
