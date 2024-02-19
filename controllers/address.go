@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"net/http"
-	"os/user"
 	"time"
 
 	"github.com/gin-gonic/gin"
