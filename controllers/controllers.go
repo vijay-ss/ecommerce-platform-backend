@@ -36,7 +36,7 @@ func VerifyPassword(userPassword string, givenPassword string) (bool, string) {
 	valid := true
 	msg := ""
 	if err != nil {
-		msg = "Login or Password is incorrect"
+		msg = "Login or Password is incorrect!"
 		valid = false
 	}
 	return valid, msg
@@ -103,7 +103,7 @@ func Signup() gin.HandlerFunc {
 		}
 		defer cancel()
 
-		c.JSON(http.StatusCreated, "Successfully signed in!")
+		c.JSON(http.StatusCreated, "Successfully signed up!")
 	}
 }
 
@@ -163,7 +163,7 @@ func ProductViewerAdmin() gin.HandlerFunc {
 		}
 		defer cancel()
 
-		c.JSON(http.StatusOK, "successfully added")
+		c.JSON(http.StatusOK, "successfully added product")
 	}
 }
 

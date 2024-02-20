@@ -2,7 +2,6 @@ package database
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"time"
 
@@ -11,7 +10,7 @@ import (
 )
 
 func DBSet() *mongo.Client {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://development:testpassword@localhost:27017"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,7 +28,7 @@ func DBSet() *mongo.Client {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Successfully connect to MongoDB")
+	log.Println("Successfully connected to MongoDB")
 
 	return client
 }
