@@ -2,7 +2,7 @@
 Backend for an Ecommerce platform written in Go.
 
 ## Architecture
-[!img](img/architecture.png)
+![](img/architecture.png)
 
 ## Tools
 - Go
